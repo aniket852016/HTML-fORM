@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <title>
+            HTML Forms
+        </title>
+
+    </head>
+    <body>
+        <section id="overlay">
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+            <hr>
+            <form action="practice.html" method="POST">
+                <h1>Creat a burger!</h1>
+                <section class="protein">
+                    <lable for="patty">What type of patty would you like?</lable>
+                    <br>
+                    <input type="text" name="patty" id="patty">
+                    
+                </section>
+            <section class="patties">
+                <label for= "amount">How many patties would you like?</label>
+                <br>
+                <input type="number" name="amount" id= "amount" step= "1">
+            </section>
+                <section class="cooked">
+                    <label for="doneness">How do you want your patty cooked?</label>
+                    <br>
+                    <input type="range" name="doneness" id="doneness" min="0" max="5" step="0.5">
+                    <br>
+                    <span>Rare</span>
+                    <span>Well-Done</span>
+
+                </section>
+                <section class="toppings">
+                    <span>What toppings would you like?</span>
+                    <br>    
+                    <lable for ="lettuce">lettuce</lable>
+                    <input type="checkbox" id="lettuce" name="toppings" value="lettuce">
+                    <lable for="tomato">Tomato</lable>
+                    <input type="checkbox" id="tomato" name="toppings" value="tomato">
+                    <label for="potato">Potato</label>
+                    <input type="checkbox" id="potato" name="toppings" value="potato">
+                </section>
+                <section class="cheesy">
+                    <br>
+                    <span>would you like to add cheese?</span>
+                    <br>
+                    <input type="radio" id="yes" name="cheese" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name ="cheese" value="no">
+                    <label for="no">No</label>
+                </section>
+                <section class="bun-type">
+                    
+                    <label for="bun" >what type of bun would you like?</label>
+                    <select id = "bun" name="bun">
+                        <option value="seesme">Seesme</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="banana">Banana</option>
+                    </select>
+
+                </section>
+                <section class="sauce-selection">
+                    <label for="sauce">Which Sauce would you like to add?</label>
+                    <input id="sauce" list="sauces" name="sauce">
+                    <datalist id="sauces">
+                        <option value="ketchup"></option>
+                        <option value="mayo"></option>
+                        <option value="tomato"></option>
+                    </datalist>
+                </section>
+                <section class="extra-info">
+                    <label for="extra">anything else you want to add?</label>
+                    <br>
+                    <textarea id="extra" name="extra"  rows="5" cols="40">Tell us about your other preferences</textarea>
+                </section>
+                <section class="submit-order">
+                    <input type="submit" value="Place Order">
+                </section>
+            </form>
+
+        </section>
+        <hr>
+        
+    </body>
+</html>
